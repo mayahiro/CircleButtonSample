@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <xyz.mayahiro.circlebuttonsample.CircleButton
+        android:id="@+id/circle_button1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:iconSize="40dp"
+        app:iconSrcCompat="@drawable/ic_android"
+        app:iconTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/circle_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="!"
+        app:textColor="@android:color/holo_blue_dark"
+        app:textGravity="start"
+        app:textSize="16sp" />
+
+    <xyz.mayahiro.circlebuttonsample.CircleButton
+        android:id="@+id/circle_button2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:iconSize="64dp"
+        app:iconSrcCompat="@drawable/ic_android"
+        app:layout_constraintBottom_toTopOf="@+id/circle_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_button1"
+        app:text="!"
+        app:textGravity="end"
+        app:textSize="16sp" />
+
+    <xyz.mayahiro.circlebuttonsample.CircleButton
+        android:id="@+id/circle_button3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:iconSize="32dp"
+        app:iconSrcCompat="@drawable/ic_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_button2" />
+
+</android.support.constraint.ConstraintLayout>
